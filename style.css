@@ -1,12 +1,17 @@
 body{
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 20px;
     padding: 0;
-    background-color: #dedee6;
+    background-color: rgb(245, 223, 223);
+}
+.container{
+    max-width: 70%;
+    margin: auto;
+    background-color: white;
 }
 .navbar{
     display: flex;
-    background-color: hwb(0 87% 11%);
+    background-color:white;
     color: white;
     padding: 15px;
     text-align: center;
@@ -49,20 +54,32 @@ body{
     padding: 10px;
     text-align: center;
 }
-.bottom div{
-    margin: 0 10px;
-    gap: 10px;
-    width: 150px;
-}
 
 .caption03{
-    display: grid;
+    display: flex;
     justify-content: row;
     align-items: center;
 
 }
-.01{
+.item01{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.item02{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item03{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
 }
