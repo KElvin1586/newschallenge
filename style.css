@@ -50,12 +50,73 @@ body{
 .bottom{
     display: flex;
     background-color: hwb(0 87% 11%);
-    color: white;
+    color: rgb(61, 37, 197);
     padding: 10px;
     text-align: center;
+    justify-content: space-around;
 }
 
 .caption03{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+
+}
+.item01{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    size: 10px;;
+}
+.item02{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.item03{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+/* mobile view */
+@media screen and (max-width: 600px) {
+    .container{
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navlinks ul{
+        flex-direction: column;
+        padding: 0;
+    }
+    .navlinks li{
+        margin: 10px 0;
+    }
+    .home, .future{
+        flex-direction: column;
+    }
+    .home .left img{
+        width: 100%;
+    }
+    .right{
+        padding: 5%;
+    }
+    .bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .caption03{
     display: flex;
     justify-content: row;
     align-items: center;
@@ -82,4 +143,73 @@ button{
     border: none;
     padding: 10px 40px;
     border-radius: 10px;
+}
+    body {
+        font-size: 10px;
+        background: #6eda3c;
+    }
+}
+  
+/* Styles for tablets and larger */
+    @media screen and (max-width: 768px ) {
+    .container{
+        max-width: 100%;
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navlinks ul{
+        flex-direction: row;
+        padding: 0;
+    }
+    .navlinks li{
+        margin: 10px 0;
+    }
+    .home, .future{
+        flex-direction: column;
+    }
+    .home .left img{
+        width: 100%;
+    }
+    .right{
+        padding: 5%;
+    }
+    .bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .caption03{
+    display: flex;
+    justify-content: row;
+    align-items: center;
+
+}
+.item01{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.item02{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+.item03{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+button{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+    body {
+        font-size: 15px;
+        background: #f3831a;
+    }
 }
